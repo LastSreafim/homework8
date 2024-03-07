@@ -13,14 +13,64 @@ public class Main {
         charArray[4] = '1';
 
         //task2
-        System.out.println(arr[0] + ", " + arr[1] + ", " + arr[2]);
-        System.out.println(numWithComma[0] + ", " + numWithComma[1] + ", " + numWithComma[2]);
-        System.out.println(charArray[0] + ", " + charArray[1] + ", " + charArray[2] + ", " + charArray[3] + ", " + charArray[4]);
+        for (int index = 0; index < arr.length; index++) {
+            if (index == arr.length - 1) {
+                System.out.println(arr[index]);
+                break;
+            }
+            System.out.print(arr[index] + ", ");
+        }
+        System.out.println(" ");
+
+        for (int d = 0; d < numWithComma.length; d++) {
+            if (d == numWithComma.length - 1) {
+                System.out.println(numWithComma[d]);
+                break;
+            }
+            System.out.print(numWithComma[d] + ", ");
+        }
+
+        System.out.println(" ");
+
+        for (int c = 0; c < charArray.length; c++) {
+            if (c == charArray.length - 1) {
+                System.out.println(charArray[c]);
+                break;
+            }
+            System.out.print(charArray[c] + ", ");
+        }
+
+
+
 
         //task3
-        System.out.println(arr[2] + ", " + arr[1] + ", " + arr[0]);
-        System.out.println(numWithComma[2] + ", " + numWithComma[1] + ", " + numWithComma[0]);
-        System.out.println(charArray[4] + ", " + charArray[3] + ", " + charArray[2] + ", " + charArray[1] + ", " + charArray[0]);
+        for (int index1 = 2; index1 >= 0; index1--) {
+            if (index1 == 0) {
+                System.out.println(arr[index1]);
+                break;
+            }
+            System.out.print(arr[index1] + ", ");
+        }
+        System.out.println(" ");
+
+        //task3
+        for (int index1 = 2; index1 >= 0; index1--) {
+            if (index1 == 0) {
+                System.out.println(numWithComma[index1]);
+                break;
+            }
+            System.out.print(numWithComma[index1] + ", ");
+        }
+        System.out.println(" ");
+
+        for (int index1 = 4; index1 >= 0; index1--) {
+            if (index1 == 0) {
+                System.out.println(charArray[index1]);
+                break;
+            }
+            System.out.print(charArray[index1] + ", ");
+        }
+        System.out.println(" ");
 
         //task4
 
